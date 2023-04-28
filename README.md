@@ -128,10 +128,12 @@ We have used this dataset in another work. It can be viewed in this github [repo
  
 ## Team
   
-Our Team members include: [Aaptha Boggaram](https://www.linkedin.com/in/aaptha-boggaram), [Ankith Boggaram](https://www.linkedin.com/in/ankith-boggaram/), [Ashwin Srinivasa Ramanujan](https://www.linkedin.com/in/ashwin-sr-355633221/) and [Aryan Rajesh Sharma](https://www.linkedin.com/in/aryans29/).
-  
-![GitHub Contributors Image](https://contrib.rocks/image?repo=RealSign62%2FRealSign-Bidirectional_Sign_Language_Translator)
-
+Our Team members include: 
+- [Aaptha Boggaram](https://www.linkedin.com/in/aaptha-boggaram)
+- [Ankith Boggaram](https://www.linkedin.com/in/ankith-boggaram/)
+- [Ashwin Srinivasa Ramanujan](https://www.linkedin.com/in/ashwin-sr-355633221/)
+- [Aryan Rajesh Sharma](https://www.linkedin.com/in/aryans29/)
+ 
   
 ## Acknowledgments
 
