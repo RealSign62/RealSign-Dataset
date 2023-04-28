@@ -31,7 +31,7 @@ The data in this work is structured as follows:
 
 |       Name       | Number of Classes |          Images from each class         |    Size on Disk    |
 |:----------------:|:-----------------:|:---------------------------------------:|:------------------:|
-| RealSign-Dataset |         26        | ~1000 (training + testing + validation) | ~100MB (per class) |
+| RealSign-Dataset |         26        | ~1000 (training + testing + validation) | ~25MB (per class) |
 
 The RealSign folder contains 26 folders with images from each class i.e., ISL fingerspelled alphabets. 
 
