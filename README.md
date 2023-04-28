@@ -1,5 +1,5 @@
 # RealSign-Dataset: An Open-Source Indian Sign Language Database
-This repository contains a collection of images of Fingerspelled Indian Sign Language (ISL) alphabets.
+This repository contains a collection of images of Fingerspelled Indian Sign Language (ISL) alphabets. Four signers have contributed towards the making of this dataset with different lighting, skin tones, colors, and variations of the ISL gestures to ensure diversity.
   
 ## Table of Contents
  
@@ -20,19 +20,20 @@ The data in this work is structured as follows:
 
 ```
 📦 Dataset
-├─ Training (A-Z)   # contains 26 folders containing training image data, one for each class 
-├─ Testing          # contains 26 folders containing testing image data, one for each class 
+├─ Training (A-Z)   # contains 26 folders containing training image data; 700 images for each class/folder.
+├─ Testing          # contains 26 folders containing testing image data; 200 images for each class/folder.
+├─ Validation       # contains 26 folders containing validation image data; 100 images for each class/folder.
 └─ Letters          # contains 26 images for visualization purposes
 ```
   
 ## Dataset Summary
 
 
-|       Name       | Number of Classes |   Images from each class   |    Size on Disk    |
-|:----------------:|:-----------------:|:--------------------------:|:------------------:|
-| RealSign-Dataset |         26        | ~1000 (training + testing) | ~100MB (per class) |
+|       Name       | Number of Classes |          Images from each class         |    Size on Disk    |
+|:----------------:|:-----------------:|:---------------------------------------:|:------------------:|
+| RealSign-Dataset |         26        | ~1000 (training + testing + validation) | ~100MB (per class) |
 
-The RealSign folder contains 26 folders with images from each class i.e., ISL fingerspelled alphabets. 4 signers have contributed in capturing these images and have contributed equally for each class.
+The RealSign folder contains 26 folders with images from each class i.e., ISL fingerspelled alphabets. 
 
 A sample of the dataset for ISL alphabet 'D' is given below:
 
@@ -47,13 +48,13 @@ The dependencies required to use this dataset (_if using python_) are listed bel
 - Matplotlib
 - opencv-python
 
-However, it is not limited to these libraries. You can use what suits best for your work.
+It is not, however, confined to these libraries. You can utilize whatever works best for you.
   
   
 ## Usage
-The dataset contains folders for training and testing respectively. To unload the dataset from these folders, the following python functions can be used.
+The dataset is divided into three main folders: training, testing, and validation. The following Python function can be used to unload the dataset from these directories.
 
-First, unload the training dataset in your workspace. We used Google Drive to mount the dataset.
+To begin, load the training dataset to your workspace. To mount the dataset, we utilized Google Drive.
 
 ```python
 # to mount the drive
@@ -66,7 +67,7 @@ directory = '/content/gdrive/MyDrive/Dataset/Training'
 os.listdir(directory) # lists 26 folders from A-Z
 ```
 
-Upon uploading the dataset, you can label these images and preprocess them using the following function.
+After uploading the dataset, you may label and preprocess the photos with the following code.
 
 ```python
 import numpy as np
@@ -97,13 +98,13 @@ def load_images(directory):
     return(images, labels, outputs)
 ```
   
-To call the function, use the following command:
+To run the function with your directory, use the following command:
   
 ```python
 images, labels, number_of_outputs = load_images(directory)   # file path containing training image data folder
 ```
   
-This returns numpy arrays containing preprocessed images, labels as well as the number of images which can be used to train any neural network or deep learning architectures.
+This function provides numpy arrays with preprocessed images, labels, and the number of photos which can be used to train any neural network or deep learning architecture.
   
   
 ## BibTeX
@@ -111,12 +112,29 @@ This returns numpy arrays containing preprocessed images, labels as well as the 
 
 
 ## Our Work
+  
+Consider looking at our systematic literature review on [Sign Language the Translation Systems](https://www.igi-global.com/article/sign-language-translation-systems/311448) before working with this dataset as it will help you find research gaps that can be addressed.
 
-
+We have used this dataset in another work. It can be viewed in this github [repository](https://github.com/RealSign62/RealSign-Bidirectional_Sign_Language_Translator). 
+ 
+ 
 ## Team
+  
+Our Team members include: [Aaptha Boggaram](https://www.linkedin.com/in/aaptha-boggaram), [Ankith Boggaram](https://www.linkedin.com/in/ankith-boggaram/), [Ashwin Srinivasa Ramanujan](https://www.linkedin.com/in/ashwin-sr-355633221/) and [Aryan Rajesh Sharma](https://www.linkedin.com/in/aryans29/).
+  
+![GitHub Contributors Image](https://contrib.rocks/image?repo=RealSign62%2FRealSign-Bidirectional_Sign_Language_Translator)
 
-
+  
 ## Acknowledgments
 
-
+- Special thanks to [Dr. Bharathi R](https://staff.pes.edu/nm1370) for guiding us throughout this initiative.
+- We would also like to express our gratitude to [PES University](https://pes.edu/) for giving us the opportunity to present this work.
+- Finally, thanks to everyone who supported us!
+  
+   
 ## License
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+
+[CC0-1.0 License](https://choosealicense.com/licenses/cc0-1.0/)
+
+
