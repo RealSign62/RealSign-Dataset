@@ -46,6 +46,8 @@ The dependencies required to use this dataset (_if using python_) are listed bel
 - NumPy 
 - Matplotlib
 - opencv-python
+- os
+- cv2
 
 However, it is not limited to these libraries. You can use what suits best for your work.
   
@@ -53,9 +55,61 @@ However, it is not limited to these libraries. You can use what suits best for y
 ## Usage
 The dataset contains folders for training and testing respectively. To unload the dataset from these folders, the following python functions can be used.
 
+First, unload the training dataset in your workspace. We used Google Drive to mount the dataset.
+
 ```python
+# to mount the drive
+from google.colab import drive
+drive.mount('/content/gdrive')
+
+# to add the specific training data folder
 import os
+directory = '/content/gdrive/MyDrive/Dataset/Training'
+os.listdir(directory) # lists 26 folders from A-Z
+```
+
+Upon uploading the dataset, you can label these images and preprocess them using the following two functions.
+
+```python
 import numpy as np
+import tensorflow as tf
+from tensorflow import keras
+
+# the following function is used to shuffle the dataset after preprocessing
+# # Can be considered as an optional step
+def unison_shuffled_copies(a, b):
+    assert len(a) == len(b)
+    p = np.random.permutation(len(a))
+    return a[p], b[p]
+    
+def load_images(directory):
+    images = []
+    labels = []
+    outputs = 0
+    uniq_labels = sorted(os.listdir(directory))
+
+    for idx, label in enumerate(uniq_labels):
+        print(label, " is ready to load")
+        outputs = outputs + 1
+        for file in os.listdir(directory + "/" + label):
+            filepath = directory + "/" + label + "/" + file
+            # x=random.randint(96,2000);
+            # y=random.randint(96,2000);
+            image = cv2.resize(cv2.imread(filepath), (128, 128))
+            # image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+            images.append(image)
+            labels.append(idx)
+    images = np.array(images)
+    labels = np.array(labels)
+
+    images, labels = unison_shuffled_copies(images, labels)
+
+    # images = images.reshape((len(images), 96, 96, 1))
+    print(images.shape)
+    images = images.astype('float32')/255.0
+    # labels = tensorflow.keras.utils.np_utils.to_categorical(labels)
+    labels = tensorflow.keras.utils.to_categorical(labels)
+    return(images, labels, outputs)
 ```
 
 
