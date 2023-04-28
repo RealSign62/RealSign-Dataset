@@ -20,9 +20,9 @@ The data in this work is structured as follows:
 
 ```
 📦 Dataset
-├─ Training (A-Z)    # contains 26 folders containing training image data; 700 images for each class/folder.
-├─ Testing (A-Z)     # contains 26 folders containing testing image data; 200 images for each class/folder.
-├─ Validation (A-Z)  # contains 26 folders containing validation image data; 100 images for each class/folder.
+├─ Training (A-Z)    # contains 26 folders containing training image data; 700 images for each class/folder
+├─ Testing (A-Z)     # contains 26 folders containing testing image data; 200 images for each class/folder
+├─ Validation (A-Z)  # contains 26 folders containing validation image data; 100 images for each class/folder
 └─ Letters (A-Z)     # contains 26 images for visualization purposes
 ```
   
