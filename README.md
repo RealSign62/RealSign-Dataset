@@ -3,6 +3,7 @@ This repository contains a collection of images of Fingerspelled Indian Sign Lan
 
 
 ## Table of Contents
+
 - [File structure](#file-structure)
 - [Dataset Summary](#dataset-summary) 
 - [Dependencies](#dependencies)
@@ -15,6 +16,7 @@ This repository contains a collection of images of Fingerspelled Indian Sign Lan
 
 
 ## File Structure
+
 The data in this work is structured as follows:
 
 ```
@@ -26,9 +28,10 @@ The data in this work is structured as follows:
 
 ## Dataset Summary
 
-|       Name       | Number of Classes | Images from each class |    Size on Disk    |
-|:----------------:|:-----------------:|:----------------------:|:------------------:|
-| RealSign-Dataset |         26        |          ~1000         | ~100MB (per class) |
+
+|       Name       | Number of Classes |   Images from each class   |    Size on Disk    |
+|:----------------:|:-----------------:|:--------------------------:|:------------------:|
+| RealSign-Dataset |         26        | ~1000 (training + testing) | ~100MB (per class) |
 
 The RealSign folder contains 26 folders with images from each class i.e., ISL fingerspelled alphabets. 4 signers have contributed in capturing these images and have contributed equally for each class.
 
