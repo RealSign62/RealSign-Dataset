@@ -112,11 +112,10 @@ This function provides numpy arrays with preprocessed images, labels, and the nu
 If you use our dataset for your work, please consider citing this repository as given below:
 
 ```bibtex
-@misc{Boggaram_RealSign-ISL-Dataset,
+@misc{Boggaram_RealSign-Indian-Sign-Language-Dataset_An_Open-Source,
 author = {Boggaram, Aaptha and Boggaram, Ankith and Srinivasa Ramanujan, Ashwin and Sharma, Aryan and R, Bharathi},
-title = {{RealSign-Dataset: An Open-Source Indian Sign Language Database}},
-url = {https://github.com/RealSign62/RealSign-Dataset}
-organization = {{PES University, Bengaluru, India}}
+title = {{RealSign-Indian-Sign-Language-Dataset: An Open-Source Indian Sign Language Database}},
+url = {https://github.com/RealSign62/RealSign-Indian-Sign-Language-Dataset}
 }
 ```
 
