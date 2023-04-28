@@ -13,5 +13,5 @@ authors:
 - family-names: "R"
   given-names:  "Bharathi"
 title: "RealSign-Dataset: An Open-Source Indian Sign Language Database"
-version: 1.2.0
+version: 1.0.0
 url: "https://github.com/RealSign62/RealSign-Dataset"
