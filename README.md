@@ -109,7 +109,15 @@ This function provides numpy arrays with preprocessed images, labels, and the nu
   
 ## BibTeX
 
+If you use our dataset for your work, please consider citing this repository as given below:
 
+```bibtex
+@misc{Boggaram_RealSign-Dataset_An_Open-Source,
+author = {Boggaram, Aaptha and Boggaram, Ankith and Srinivasa Ramanujan, Ashwin and Sharma, Aryan and R, Bharathi},
+title = {{RealSign-Dataset: An Open-Source Indian Sign Language Database}},
+url = {https://github.com/RealSign62/RealSign-Dataset}
+}
+```
 
 ## Our Work
   
