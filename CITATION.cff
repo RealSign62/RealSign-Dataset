@@ -1,4 +1,5 @@
 cff-version: 1.2.0
+type: dataset
 message: "If you use this dataset for your work, please consider citing this repository as given below."
 authors:
 - family-names: "Boggaram"
