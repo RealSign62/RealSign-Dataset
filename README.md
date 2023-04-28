@@ -40,14 +40,11 @@ A sample of the dataset for ISL alphabet 'D' is given below:
 
 ## Dependencies
 The dependencies required to use this dataset (_if using python_) are listed below:
-- Python
 - Tensorflow
 - Keras
 - NumPy 
 - Matplotlib
 - opencv-python
-- os
-- cv2
 
 However, it is not limited to these libraries. You can use what suits best for your work.
   
@@ -68,19 +65,13 @@ directory = '/content/gdrive/MyDrive/Dataset/Training'
 os.listdir(directory) # lists 26 folders from A-Z
 ```
 
-Upon uploading the dataset, you can label these images and preprocess them using the following two functions.
+Upon uploading the dataset, you can label these images and preprocess them using the following function.
 
 ```python
 import numpy as np
 import tensorflow as tf
 from tensorflow import keras
-
-# the following function is used to shuffle the dataset after preprocessing
-# # Can be considered as an optional step
-def unison_shuffled_copies(a, b):
-    assert len(a) == len(b)
-    p = np.random.permutation(len(a))
-    return a[p], b[p]
+import cv2
     
 def load_images(directory):
     images = []
@@ -93,24 +84,25 @@ def load_images(directory):
         outputs = outputs + 1
         for file in os.listdir(directory + "/" + label):
             filepath = directory + "/" + label + "/" + file
-            # x=random.randint(96,2000);
-            # y=random.randint(96,2000);
             image = cv2.resize(cv2.imread(filepath), (128, 128))
-            # image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
             images.append(image)
             labels.append(idx)
     images = np.array(images)
     labels = np.array(labels)
 
-    images, labels = unison_shuffled_copies(images, labels)
-
-    # images = images.reshape((len(images), 96, 96, 1))
     print(images.shape)
     images = images.astype('float32')/255.0
-    # labels = tensorflow.keras.utils.np_utils.to_categorical(labels)
-    labels = tensorflow.keras.utils.to_categorical(labels)
+    labels = tf.keras.utils.to_categorical(labels)
     return(images, labels, outputs)
 ```
+
+To call the function, use the following command:
+
+```python
+images, labels, number_of_outputs = load_images(directory)   # file path containing training image data folder
+```
+
+This returns numpy arrays containing preprocessed images, labels as well as the number of images.
 
 
 ## BibTeX
