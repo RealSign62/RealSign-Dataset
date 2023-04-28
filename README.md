@@ -1,4 +1,4 @@
-# RealSign-Dataset: An Open-Source Indian Sign Language Database
+# RealSign-ISL-Dataset: An Open-Source Indian Sign Language Database
 This repository contains a collection of images of Fingerspelled Indian Sign Language (ISL) alphabets. Four signers have contributed towards the making of this dataset with different lighting, skin tones, colors, and variations of the ISL gestures to ensure diversity.
   
 ## Table of Contents
