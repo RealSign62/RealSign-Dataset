@@ -24,7 +24,7 @@ The data in this work is structured as follows:
 ├─ Testing          # contains 26 folders containing testing image data, one for each class 
 └─ Letters          # contains 26 images for visualization purposes
 ```
-
+  
 ## Dataset Summary
 
 
@@ -37,7 +37,8 @@ The RealSign folder contains 26 folders with images from each class i.e., ISL fi
 A sample of the dataset for ISL alphabet 'D' is given below:
 
 ![ISL signs](https://user-images.githubusercontent.com/56569120/235040509-5a08605a-673e-4139-92a9-aa82bf706b36.png)
-
+  
+  
 ## Dependencies
 The dependencies required to use this dataset (_if using python_) are listed below:
 - Tensorflow
@@ -95,16 +96,16 @@ def load_images(directory):
     labels = tf.keras.utils.to_categorical(labels)
     return(images, labels, outputs)
 ```
-
+  
 To call the function, use the following command:
-
+  
 ```python
 images, labels, number_of_outputs = load_images(directory)   # file path containing training image data folder
 ```
-
-This returns numpy arrays containing preprocessed images, labels as well as the number of images.
-
-
+  
+This returns numpy arrays containing preprocessed images, labels as well as the number of images which can be used to train any neural network or deep learning architectures.
+  
+  
 ## BibTeX
 
 
