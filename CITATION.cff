@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+type: dataset
+message: "If you use this dataset for your work, please consider citing this repository as given below."
+authors:
+- family-names: "Boggaram"
+  given-names: "Aaptha"
+- family-names: "Boggaram"
+  given-names: "Ankith"
+- family-names: "Srinivasa Ramanujan"
+  given-names:  "Ashwin"
+- family-names: "Sharma"
+  given-names:  "Aryan"
+- family-names: "R"
+  given-names:  "Bharathi"
+title: "RealSign-Dataset: An Open-Source Indian Sign Language Database"
+version: 1.0.0
+url: "https://github.com/RealSign62/RealSign-Dataset"
+institution: "PES University, Bengaluru, India"
