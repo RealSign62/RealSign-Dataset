@@ -137,7 +137,7 @@ Our Team members include:
   
 ## Acknowledgments
 
-- Special thanks to [Dr. Bharathi R](https://staff.pes.edu/nm1370) for guiding us throughout this initiative.
+- Special thanks to [Dr. Bharathi R](https://www.linkedin.com/in/dr-bharathi-r-a1b39752/) for guiding us throughout this initiative.
 - We would also like to express our gratitude to [PES University](https://pes.edu/) for giving us the opportunity to present this work.
 - Finally, thanks to everyone who supported us!
   
